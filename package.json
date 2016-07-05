@@ -1,6 +1,6 @@
 {
   "name": "nopaths",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Removes valid filesystem paths from input string (filenames are kept).",
   "keywords": [
     "path",
