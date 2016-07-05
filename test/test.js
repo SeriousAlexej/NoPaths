@@ -10,13 +10,16 @@ describe('#nopaths', function(){
 		nopaths(str1 + process.env.HOME + path.sep + str2).should.equal(str1 + str2);
 	});
 	
-	it('Path entries', function(){
-		let pathDirs = process.env.PATH.split(path.delimiter);
-		for(let i=0; i<pathDirs.length; ++i)
+	it('Std entries', function(){
+		
+		// unix-specific
+		if(process.platform !== 'win32')
 		{
-			if(pathDirs[i][pathDirs[i].length-1] != path.sep)
-				pathDirs[i] = pathDirs[i] + path.sep;
-			nopaths(pathDirs[i]).should.equal('');
+			nopaths('Hey /dev/').should.equal('Hey ');
+		}
+		else //win-specific
+		{
+			nopaths('Hey ' + process.env.APPDATA + path.sep).should.equal('Hey ');
 		}
 	});
 	
