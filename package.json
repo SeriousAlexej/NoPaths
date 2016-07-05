@@ -1,0 +1,33 @@
+{
+  "name": "nopaths",
+  "version": "0.1.0",
+  "description": "Removes valid filesystem paths from input string (filenames are kept).",
+  "keywords": [
+    "path",
+    "directory",
+    "remove",
+    "string",
+    "strip"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeriousAlexej/NoPaths.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": {
+    "name": "SeriousAlexej",
+    "email": "seriousalexej@gmail.com",
+    "url": "https://github.com/SeriousAlexej"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeriousAlexej/NoPaths/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
