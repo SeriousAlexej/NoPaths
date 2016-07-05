@@ -24,7 +24,7 @@ describe('#nopaths', function(){
 		// unix-specific
 		if(process.platform !== 'win32')
 		{
-			nopaths('~/../../dev/').should.equal('');
+			nopaths('./../').should.equal('');
 		}
 		else //win-specific
 		{
